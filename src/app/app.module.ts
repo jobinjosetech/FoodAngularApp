@@ -8,6 +8,30 @@ import { BurgerComponent } from './burger/burger.component';
 import { JuicesComponent } from './juices/juices.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoutes:Routes = [
+  {
+    path:"",
+    component:LoginComponent
+  },
+  {
+    path:"signup",
+    component:SignupComponent
+  },
+  {
+    path:"home",
+    component:HomePageComponent
+  },
+  {
+    path:"burger",
+    component:BurgerComponent
+  },
+  {
+    path:"juice",
+    component:JuicesComponent
+  },
+]
 
 @NgModule({
   declarations: [
@@ -20,7 +44,8 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
