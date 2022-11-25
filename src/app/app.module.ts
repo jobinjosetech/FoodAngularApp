@@ -9,6 +9,7 @@ import { JuicesComponent } from './juices/juices.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const myRoutes:Routes = [
   {
@@ -41,6 +42,7 @@ const myRoutes:Routes = [
     JuicesComponent,
     SignupComponent,
     LoginComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,
