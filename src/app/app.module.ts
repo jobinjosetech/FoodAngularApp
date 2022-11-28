@@ -10,6 +10,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const myRoutes:Routes = [
   {
@@ -32,6 +33,10 @@ const myRoutes:Routes = [
     path:"juice",
     component:JuicesComponent
   },
+  {
+    path:"checkout",
+    component:CheckoutComponent
+  },
 ]
 
 @NgModule({
@@ -43,6 +48,7 @@ const myRoutes:Routes = [
     SignupComponent,
     LoginComponent,
     NavigationComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
